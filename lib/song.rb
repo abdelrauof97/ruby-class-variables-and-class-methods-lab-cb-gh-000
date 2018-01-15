@@ -31,7 +31,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres.map{ |x| x = genre}.length
+    
   end
     
 end
