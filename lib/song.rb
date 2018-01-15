@@ -10,7 +10,7 @@ class Song
     @name = name 
     @artist = artist
     @genre = genre
-    @@genres << genre unless @@genres.include?(genre)
+    @@genres << genre 
     @@count += 1
   end
   
@@ -19,7 +19,7 @@ class Song
   end 
   
   def self.genres 
-    @@genres 
+    @@genres.uniq
   end
   
 end
