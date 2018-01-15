@@ -15,6 +15,7 @@ class Song
     @@genres << genre 
     @@artists << artist
     @@count += 1
+    
   end
   
   def self.count 
@@ -30,7 +31,7 @@ class Song
   end
   
   def self.genre_count
-    
+    @@genres.map{ |x| x = genre}.length
   end
     
 end
