@@ -15,7 +15,11 @@ class Song
     @@genres << genre 
     @@artists << artist
     @@count += 1
-    @@genre_count[genre] = @@genres.each{ |x| x = genre}.length
+    @@genre_count[genre] = @@genres.each{ |x| 
+    if x == genre
+      x 
+    end
+    }.length
   end
   
   def self.count 
