@@ -16,7 +16,7 @@ class Song
     @@artists << artist
     @@count += 1
     @@genre_count[genre] = @@genres.reject{ |x| x != genre}.length
-    @@artist_count[artist] = @@artists.
+    @@artist_count[artist] = @@artists.reject{ |x| x != artist}.length
   end 
   
   def self.count 
